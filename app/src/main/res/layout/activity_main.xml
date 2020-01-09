@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.enfin.MainActivity">
+
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:ignore="MissingConstraints">
+
+        <FrameLayout
+            android:id="@+id/subscriber_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+
+        <FrameLayout
+            android:id="@+id/publisher_container"
+            android:layout_width="290dp"
+            android:layout_height="320dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="@dimen/publisher_right_margin"
+            android:layout_marginRight="@dimen/publisher_end_margin"
+            android:layout_marginBottom="@dimen/publisher_bottom_margin"
+            android:background="@color/publisher_border_color"
+            android:padding="@dimen/publisher_padding" />
+
+        <ImageView
+            android:id="@+id/scan"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="12dp"
+            android:src="@drawable/ic_scanner_black_24dp" />
+
+        <ImageView
+            android:id="@+id/cameraSwitch"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="12dp"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_switch_camera_white_24dp" />
+
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
